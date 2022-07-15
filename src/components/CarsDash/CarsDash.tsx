@@ -176,7 +176,6 @@ export const Cars = withRouter((props: CarsProps) => {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = useState(false);
-
   const [dialogOpen, setDialogOpen] = useState(false);
 
   const handleDrawerOpen = () => {

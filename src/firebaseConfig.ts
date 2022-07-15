@@ -5,12 +5,12 @@
 
 // Your web app's Firebase configuration
 export const firebaseConfig = {
-  apiKey: "AIzaSyDTcOGpoWdBJuiqvteEBTjNBjRFk1GOS8o",
-  authDomain: "car-inventory-dashboard.firebaseapp.com",
-  projectId: "car-inventory-dashboard",
-  storageBucket: "car-inventory-dashboard.appspot.com",
-  messagingSenderId: "485643690902",
-  appId: "1:485643690902:web:9058c0eea7dfb4f87d73b7"
+  apiKey: "AIzaSyBuYzPt_OoMLYXk3qyv8v7mNqC9SanYhFQ",
+  authDomain: "car-dashboard-8c12e.firebaseapp.com",
+  projectId: "car-dashboard-8c12e",
+  storageBucket: "car-dashboard-8c12e.appspot.com",
+  messagingSenderId: "240224059592",
+  appId: "1:240224059592:web:6c4e1f072d59ffc674a5fd"
 };
 
 // Initialize Firebase

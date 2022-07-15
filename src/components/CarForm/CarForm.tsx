@@ -5,6 +5,8 @@ import { chooseMake, chooseModel, chooseSale_price, chooseColor, chooseYear, cho
 import { Input } from "../SharedComponents/Input";
 import { Button } from "@material-ui/core";
 import { server_calls } from "../../api";
+import { useGetData } from "../../custom-hooks/FetchData";
+
 
 interface CarFormProps {
   id?: string;
@@ -22,11 +24,13 @@ interface CarState {
 
 export const CarForm = (props: CarFormProps) => {
   const dispatch = useDispatch();
+  let { carData, getData } = useGetData();
   const store = useStore();
+  const name = useSelector<CarState>(state => state.make);
   const { register, handleSubmit } = useForm({});
 
   const onSubmit = (data: any, event: any) => {
-    console.log(props.id);
+    console.log(props.id)
     if (props.id!) {
       server_calls.update(props.id!, data);
       console.log(`Updated:${data} ${props.id}`);
